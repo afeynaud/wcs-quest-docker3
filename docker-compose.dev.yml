@@ -2,9 +2,9 @@ services:
   client:
     build: ./client
     ports:
-      - 8080:8080
+      - 8080:3000
     volumes:
-      - ./server/src/:/app/src/
+      - ./client/src/:/app/src/
   server:
     build: ./server
     ports:
